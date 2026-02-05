@@ -25,6 +25,51 @@ This is a **Hybrid Application** developed for the FOSSEE Internship screening t
 * **Data Analysis:** Pandas, NumPy
 * **Database:** SQLite
 
+* ⚙️ Installation & Setup Instructions
+1. Prerequisites
+Python 3.10+ installed.
+
+Node.js (v18+) and npm installed.
+
+Git for cloning the repository.
+
+2. Backend Setup (Django)
+Navigate to the backend directory: cd backend
+
+Create a virtual environment: python -m venv venv
+
+Activate the virtual environment:
+
+Windows: venv\Scripts\activate
+
+Mac/Linux: source venv/bin/activate
+
+Install dependencies: pip install -r ../requirements.txt
+
+Run migrations: python manage.py migrate
+
+Start the server: python manage.py run server
+
+The API will be available at http://127.0.0.1:8000/
+
+3. Web Frontend Setup (React + Vite)
+Open a new terminal and navigate to the web folder: cd frontend-web
+
+Install packages: npm install
+
+Start the development server: npm run dev
+
+Open your browser to http://localhost:8080/ (or the port shown in your terminal).
+
+4. Desktop Frontend Setup (PyQt5)
+Ensure your Python virtual environment is still active.
+
+Navigate to the desktop folder: cd frontend-desktop
+
+Run the application: python main.py
+
+Note: Ensure the Django backend is running simultaneously for the desktop app to fetch data
+
 ## 📂 Folder Structure
 * `backend/` - Django server logic, API endpoints, and SQLite database.
 * `frontend-web/` - React.js source code for the browser-based dashboard.
