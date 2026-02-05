@@ -50,7 +50,7 @@ Run migrations: python manage.py migrate
 
 Start the server: python manage.py run server
 
-The API will be available at http://127.0.0.1:8000/
+The API will be available at http://localhost:5173/
 
 3. Web Frontend Setup (React + Vite)
 Open a new terminal and navigate to the web folder: cd frontend-web
@@ -59,7 +59,7 @@ Install packages: npm install
 
 Start the development server: npm run dev
 
-Open your browser to http://localhost:8080/ (or the port shown in your terminal).
+Open your browser to http://localhost:5173/ (or the port shown in your terminal).
 
 4. Desktop Frontend Setup (PyQt5)
 Ensure your Python virtual environment is still active.
