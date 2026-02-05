@@ -2,7 +2,8 @@
 
 ### 🚀 Submission Details
 * **Git Repository:** https://github.com/masterwayne22/chemviz
-* **Live Web link:**http://localhost:5173/
+* **Local host website :**http://localhost:5173/
+* **deployed website link:**https://eloquent-unicorn-ef2d76.netlify.app/
 
 
 ---
@@ -50,7 +51,7 @@ Run migrations: python manage.py migrate
 
 Start the server: python manage.py run server
 
-The API will be available at http://localhost:5173/
+
 
 3. Web Frontend Setup (React + Vite)
 Open a new terminal and navigate to the web folder: cd frontend-web
@@ -59,7 +60,7 @@ Install packages: npm install
 
 Start the development server: npm run dev
 
-Open your browser to http://localhost:5173/ (or the port shown in your terminal).
+
 
 4. Desktop Frontend Setup (PyQt5)
 Ensure your Python virtual environment is still active.
