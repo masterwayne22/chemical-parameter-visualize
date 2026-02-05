@@ -7,17 +7,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      // Force Vite to find next-themes in the local node_modules
+      // This tells Vite: "The package is exactly in the node_modules next to this config file"
       "next-themes": path.resolve(__dirname, "node_modules/next-themes"),
     },
   },
   build: {
     rollupOptions: {
-      // If the error persists, this tells Rollup to treat it as a runtime dependency
+      // Prevents Rollup from trying to find 'next-themes' outside the bundle
       external: [], 
-    },
-    commonjsOptions: {
-      include: [/next-themes/, /node_modules/],
     },
   },
 });
