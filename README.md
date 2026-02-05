@@ -1,7 +1,7 @@
 # Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
 
 ### 🚀 Submission Details
-* **Git Repository:** (https://github.com/masterwayne22/chemical-parameter-visualize)
+* **Git Repository:** https://github.com/masterwayne22/chemviz
 * **Live Web Deployment:**https://chemviz-smoky.vercel.app/
 
 
