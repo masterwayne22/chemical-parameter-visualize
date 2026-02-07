@@ -4,6 +4,22 @@ This project is open-source and released under the MIT License.
 Developed by: Krishiv Sarva
 
 Designed for the FOSSEE Internship Program.
+🚀 Project Summary: ChemViz
+Core Objective: Developed a high-performance web application to simplify chemical data visualization through an interactive 3D interface and a dynamic Periodic Table.
+
+Technical Implementation: Leveraged React 18  for a modern, responsive frontend, ensuring sub-second load times and efficient state management.
+
+Key Functionalities:
+
+Integrated a 3D Molecular Viewer allowing users to interactively manipulate molecular structures (Zoom/Rotate/Scale).
+
+Engineered a Dynamic Periodic Table with real-time filtering and detailed property analysis for all 118 elements.
+
+FOSS Alignment: Built entirely using Free and Open Source Software, adhering to the core mission of the FOSSEE initiative.
+
+Scalability: Organized with a modular component-based architecture, making the codebase easy to maintain and extend with new chemical datasets.
+
+Deployment: Successfully hosted on Netlify with a continuous integration pipeline linked to the GitHub repository for real-time updates.
 
 ### 📋 1. Project Overview & Mission
 * **Context:** Specialized project for the **FOSSEE Screening Task (IIT Bombay)**.
@@ -62,19 +78,4 @@ Follow these exact steps to replicate the environment:
    cd chemviz
    npm install
    npm run dev
-🚀 Project Summary: ChemViz
-Core Objective: Developed a high-performance web application to simplify chemical data visualization through an interactive 3D interface and a dynamic Periodic Table.
 
-Technical Implementation: Leveraged React 18 and Vite for a modern, responsive frontend, ensuring sub-second load times and efficient state management.
-
-Key Functionalities:
-
-Integrated a 3D Molecular Viewer allowing users to interactively manipulate molecular structures (Zoom/Rotate/Scale).
-
-Engineered a Dynamic Periodic Table with real-time filtering and detailed property analysis for all 118 elements.
-
-FOSS Alignment: Built entirely using Free and Open Source Software, adhering to the core mission of the FOSSEE initiative.
-
-Scalability: Organized with a modular component-based architecture, making the codebase easy to maintain and extend with new chemical datasets.
-
-Deployment: Successfully hosted on Netlify with a continuous integration pipeline linked to the GitHub repository for real-time updates.
