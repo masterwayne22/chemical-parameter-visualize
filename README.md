@@ -1,83 +1,98 @@
-# Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
+🛠️ ChemViz: Chemical Equipment Parameter Visualizer
+Hybrid Data Analytics System (Web + Desktop)
+📋 Project Overview
+Purpose: A cross-platform tool developed for the FOSSEE Screening Task (IIT Bombay).
 
----
+Core Function: Upload, process, and visualize industrial chemical equipment data.
 
-### 🚀 Project Summary: ChemViz
-* **Core Objective:** Developed a high-performance web application to simplify chemical data visualization through an interactive 3D interface and a dynamic Periodic Table.
-* **Technical Implementation:** Leveraged **React 18** for a modern, responsive frontend, ensuring sub-second load times and efficient state management.
-* **Key Functionalities:**
-    * **3D Molecular Viewer:** Allows users to interactively manipulate molecular structures.
-    * **Dynamic Periodic Table:** Real-time filtering and detailed property analysis for all 118 elements.
-* **FOSS Alignment:** Built entirely using Free and Open Source Software, adhering to the core mission of the **FOSSEE initiative**.
-* **Scalability:** Organized with a modular component-based architecture for easy maintenance and expansion.
-* **Deployment:** Successfully hosted on Netlify with a CI/CD pipeline linked to GitHub.
-* License: This project is open-source and released under the MIT License.
+Architecture: Hybrid System (Single Django Backend ↔ Dual Frontends).
+
+Industry Focus: Designed with an Industrial HMI (Human Machine Interface) aesthetic.
+
+✨ Key Features
+🚀 Cross-Platform Compatibility: Unified experience across browsers and native desktop environments.
+
+📊 Automated Analytics: Powered by Pandas for instant calculation of:
+
+Total Equipment Counts.
+
+Averaged parameters (Flowrate, Pressure, Temperature).
+
+Distribution of equipment types.
+
+📈 Dynamic Visualization: * Web: Interactive charts via Chart.js.
+
+Desktop: High-precision scientific plots via Matplotlib.
+
+🔐 Security & History: * Basic Authentication for secure data access.
+
+SQLite integration to manage the history of the last 5 uploaded datasets.
+
+🛠️ Technical Stack
+Backend (Core Engine)
+Language: Python 3.10+
+
+Framework: Django & Django REST Framework (DRF).
+
+Data Science: Pandas (CSV parsing & statistical analysis).
+
+Database: SQLite (History and User management).
+
+Web Frontend
+Framework: React 18 (Vite build tool).
+
+Styling: Tailwind CSS (Custom Industrial Design System).
+
+Charts: Chart.js.
+
+Desktop Frontend
+Framework: PyQt5.
+
+Graphics: Matplotlib integration.
+
+📂 Repository Structure
+📁 backend/ → Django project, API logic, and analytics modules.
+
+📁 frontend-web/ → React source code and dashboard UI.
+
+📁 frontend-desktop/ → PyQt5 native application scripts.
+
+📄 sample_equipment_data.csv → Reference data for testing.
+
+📄 requirements.txt → Python dependency manifest.
+
+💻 Installation & Setup
+1. Backend (Django)
+cd backend
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver
+
+
+2. Web Frontend (React)
+cd frontend-web
+
+npm install
+
+npm run dev
+
+Note: Dashboard accessible at http://localhost:5173
+
+3. Desktop Frontend (PyQt5)
+cd frontend-desktop
+
+python main.py
+
+🌐 Submission Links
+Live Web Demo: https://eloquent-unicorn-ef2d76.netlify.app/ 
+
+GitHub repo link: https://github.com/masterwayne22/chemviz
 
 Developed by: Krishiv Sarva
 
-Designed for: FOSSEE Internship Program Evaluation.
+License: MIT Open Source
 
----
-
-### 📋 1. Project Overview & Mission
-* **Context:** Specialized project for the **FOSSEE Screening Task (IIT Bombay)**.
-* **Goal:** To bridge the gap between complex chemical data and user-friendly visualization.
-* **FOSS Commitment:** Developed using 100% Free and Open Source Software.
-
----
-
-### 🌐 2. Project Access Points
-* **Live Production Link (Netlify):** [https://eloquent-unicorn-ef2d76.netlify.app/](https://eloquent-unicorn-ef2d76.netlify.app/)
-* **Source Code (GitHub):** [https://github.com/masterwayne22/chemviz](https://github.com/masterwayne22/chemviz)
-
----
-
-### ✨ 3. Core Features & Functionality
-* **Interactive Periodic Table:**
-    * Real-time property fetching for 118 elements.
-    * Dynamic filtering based on atomic mass, group, and period.
-* **3D Molecular Visualization:**
-    * WebGL-based rendering for smooth 3D interaction.
-    * Fully interactive camera (Rotation, Pan, Zoom).
-* **Developer Experience:**
-    * Hot Module Replacement (HMR) for instant UI updates.
-    * Mobile-responsive layout using modern CSS techniques.
-
----
-
-### 🛠️ 4. Technical Specifications (The Stack)
-* **Framework:** React.js (v18.x)
-* **Build Architecture:** Vite (ES modules)
-* **Environment:** Node.js Runtime
-* **Styling:** Tailwind CSS / CSS3 Implemented a custom CSS design system using Tailwind CSS layers to mimic an industrial HMI (Human Machine Interface), prioritizing high-contrast data visualization and monochromatic surfaces to reduce user fatigue
-* **Open Source License:** MIT License
-
----
-
-### 📂 5. Full Repository Architecture
-* **/src**: Core source code.
-* **/src/components**: UI modules like `PeriodicTable.jsx` and `MolecularViewer.jsx`.
-* **App.jsx**: Main entry point and state management.
-* **main.jsx**: React DOM rendering configuration.
-* **/public**: Static JSON datasets containing element properties and 3D assets.
-* **package.json**: Manifest file listing dependencies and scripts.
-* **.gitignore**: Prevents unnecessary files from being tracked.
-
----
-
-### 💻 6. Comprehensive Installation & Local Setup
-Follow these exact steps to replicate the environment:
-
-1. **Clone the Project:**
-```bash
-git clone https://github.com/masterwayne22/chemviz.git
-
-2. Enter Directory:
-cd chemviz
-
-3. Install Dependencies:
-npm install
-
-4. Run Development Server:
-npm run dev
-
+Target: FOSSEE Internship Program Evaluation
