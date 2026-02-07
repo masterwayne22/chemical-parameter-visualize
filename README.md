@@ -49,7 +49,7 @@ Designed for: FOSSEE Internship Program Evaluation.
 * **Framework:** React.js (v18.x)
 * **Build Architecture:** Vite (ES modules)
 * **Environment:** Node.js Runtime
-* **Styling:** Tailwind CSS / CSS3
+* **Styling:** Tailwind CSS / CSS3 Implemented a custom CSS design system using Tailwind CSS layers to mimic an industrial HMI (Human Machine Interface), prioritizing high-contrast data visualization and monochromatic surfaces to reduce user fatigue
 * **Open Source License:** MIT License
 
 ---
