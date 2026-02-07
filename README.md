@@ -61,7 +61,6 @@ Designed for: FOSSEE Internship Program Evaluation.
 * **main.jsx**: React DOM rendering configuration.
 * **/public**: Static JSON datasets containing element properties and 3D assets.
 * **package.json**: Manifest file listing dependencies and scripts.
-* **vite.config.js**: Optimization settings for the Vite compiler.
 * **.gitignore**: Prevents unnecessary files from being tracked.
 
 ---
