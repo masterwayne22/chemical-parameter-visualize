@@ -1,32 +1,144 @@
-# Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
+⚗️ ChemViz — Industrial Parameter Visualization Platform
 
-### 🚀 Submission Details
-* **Git Repository:** https://github.com/masterwayne22/chemviz
-* **Live Web Deployment:**https://chemviz-smoky.vercel.app/
+FOSSEE Internship Screening Task | IIT Bombay (2026)
 
+A hybrid web + desktop scientific visualization system for analyzing industrial equipment parameters from structured datasets.
 
----
+🚀 Live Demo
+🌐 Web Dashboard (Cloudflare Pages)
 
-## 📝 Project Overview
-This is a **Hybrid Application** developed for the FOSSEE Internship screening task. It provides a unified dashboard for chemical engineers to visualize equipment data (Flowrate, Pressure, Temperature) across both Web and Desktop platforms using a shared Django REST API.
+👉 https://chemviz-aen.pages.dev/
 
-## ✨ Key Features
-* **CSV Data Processing:** Robust parsing of chemical equipment datasets using **Pandas**.
-* **Hybrid Dashboard:** * **Web:** Interactive React.js interface with **Chart.js** visualizations.
-    * **Desktop:** Standalone PyQt5 application with **Matplotlib** integration.
-* **History Management:** Automatic tracking of the last 5 uploaded datasets using an **SQLite** database.
-* **Data Insights:** Automated calculation of total equipment counts, parameter averages, and type distributions.
-* **Reporting:** Capability to generate PDF summaries of processed equipment data.
+⚠️ Deployment Note
 
-## 🛠️ Tech Stack
-* **Backend:** Python Django, Django REST Framework (DRF)
-* **Web Frontend:** React.js, Tailwind CSS, Chart.js
-* **Desktop Frontend:** Python, PyQt5, Matplotlib
-* **Data Analysis:** Pandas, NumPy
-* **Database:** SQLite
+The web dashboard is deployed on Cloudflare Pages as a static frontend demo.
 
-## 📂 Folder Structure
-* `backend/` - Django server logic, API endpoints, and SQLite database.
-* `frontend-web/` - React.js source code for the browser-based dashboard.
-* `frontend-desktop/` - PyQt5 script for the desktop analytics tool.
-* `requirements.txt` - Python dependencies for the entire ecosystem.
+The Django REST analytics backend is not publicly deployed due to free hosting constraints.
+
+Full CSV processing and API-based computations require running the backend locally.
+
+Earlier Netlify deployment was suspended due to free-tier limits. This Cloudflare link is the final working deployment.
+
+📂 Source Code
+
+👉 https://github.com/masterwayne22/chemviz
+
+🧠 Project Overview
+
+ChemViz is a unified data visualization and analytics platform designed for:
+
+🎓 Chemical Engineering students
+
+🔬 Researchers
+
+🏭 Industrial dataset analysis
+
+The system provides:
+
+✅ Centralized Python backend for data processing & analytics
+
+✅ High-performance web dashboard for visualization
+
+✅ Native desktop application for offline monitoring
+
+🎯 Goal:
+Reduce dependency on proprietary industrial visualization tools and provide an open-source, extensible scientific analytics framework.
+
+🏗️ System Architecture
+📥 CSV Dataset Upload
+        ↓
+🧠 Django REST Analytics API
+        ↓
+React Web Dashboard   |   PyQt5 Desktop Client
+
+🛠️ Tech Stack
+🔹 Backend Engine
+
+Django + Django REST Framework (DRF) — Centralized analytics API
+
+Pandas — Dataset parsing & statistical computations
+
+SQLite — Persistence for last 5 dataset uploads
+
+🔹 Web Frontend
+
+React 18 + Vite — High-performance UI rendering
+
+Chart.js — Interactive scientific plots
+
+Tailwind CSS — Industrial dark-mode dashboard UI
+
+🔹 Desktop Frontend
+
+PyQt5 — Native desktop monitoring application
+
+Matplotlib — Scientific plotting and trend visualization
+
+⚡ Core Features
+📥 CSV Data Processing
+
+Automatic parsing of:
+
+Equipment Name
+
+Equipment Type
+
+Flowrate
+
+Pressure
+
+Temperature
+
+📊 Analytics API
+
+Global averages of industrial parameters
+
+Equipment-type distribution statistics
+
+🧠 Smart Dataset History
+
+Stores and toggles between the last 5 uploaded datasets
+
+🖥️ Industrial Control Panel UI
+
+High-contrast dark theme optimized for technical environments
+
+📄 PDF Reporting (Planned)
+
+Automated dataset summary and equipment log reports
+
+⚠️ Current Limitation
+
+After uploading a dataset, the web frontend requires a manual page refresh to retrieve updated analytics from the backend API.
+
+This is due to the current request-based update mechanism and will be replaced with real-time synchronization in future versions.
+
+📂 Project Structure
+backend/            Django REST API & Pandas analytics  
+frontend-web/       React dashboard source code  
+frontend-desktop/   PyQt5 desktop monitoring client  
+requirements.txt    Python dependency manifest   
+
+⚙️ Installation & Execution
+🔹 Backend
+cd backend
+pip install -r requirements.txt
+python manage.py runserver
+
+🔹 Web Dashboard
+cd frontend-web
+npm install
+npm run dev
+
+🔹 Desktop Application
+cd frontend-desktop
+python main.py
+
+👤 Author
+
+Krishiv Sarva
+FOSSEE Internship Applicant 2026
+
+📜 License
+
+MIT Open Source License
