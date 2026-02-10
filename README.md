@@ -5,30 +5,33 @@ FOSSEE Internship Screening Task | IIT Bombay (2026)
 A hybrid web + desktop scientific visualization system for analyzing industrial equipment parameters from structured datasets.
 
 🚀 Live Demo
+🌐 Web Dashboard (Cloudflare Pages)
 
-🌐 Web Dashboard:
-👉 https://eloquent-unicorn-ef2d76.netlify.app/
+👉 https://chemviz-aen.pages.dev/
 
-🌐 Deployment Note:
+⚠️ Deployment Note
 
-The web dashboard is deployed on Netlify as a static frontend demonstration.
+The web dashboard is deployed on Cloudflare Pages as a static frontend demo.
 
-Due to hosting constraints, the Django REST analytics backend is not publicly deployed.
+The Django REST analytics backend is not publicly deployed due to free hosting constraints.
 
-Full CSV processing and API computations require running the backend locally.
+Full CSV processing and API-based computations require running the backend locally.
 
-📂 Source Code:
+Earlier Netlify deployment was suspended due to free-tier limits. This Cloudflare link is the final working deployment.
+
+📂 Source Code
+
 👉 https://github.com/masterwayne22/chemviz
 
 🧠 Project Overview
 
 ChemViz is a unified data visualization and analytics platform designed for:
 
-Chemical engineering students
+🎓 Chemical Engineering students
 
-Researchers
+🔬 Researchers
 
-Industrial dataset analysis
+🏭 Industrial dataset analysis
 
 The system provides:
 
@@ -38,20 +41,14 @@ The system provides:
 
 ✅ Native desktop application for offline monitoring
 
-Goal:
-
-Reduce dependency on proprietary industrial visualization tools
-
-Provide an open-source, extensible scientific analytics framework
+🎯 Goal:
+Reduce dependency on proprietary industrial visualization tools and provide an open-source, extensible scientific analytics framework.
 
 🏗️ System Architecture
-
 📥 CSV Dataset Upload
-↓
-
+        ↓
 🧠 Django REST Analytics API
-↓
-
+        ↓
 React Web Dashboard   |   PyQt5 Desktop Client
 
 🛠️ Tech Stack
@@ -120,8 +117,7 @@ This is due to the current request-based update mechanism and will be replaced w
 backend/            Django REST API & Pandas analytics  
 frontend-web/       React dashboard source code  
 frontend-desktop/   PyQt5 desktop monitoring client  
-requirements.txt    Python dependency manifest  
-
+requirements.txt    Python dependency manifest   
 
 ⚙️ Installation & Execution
 🔹 Backend
@@ -141,7 +137,6 @@ python main.py
 👤 Author
 
 Krishiv Sarva
-
 FOSSEE Internship Applicant 2026
 
 📜 License
